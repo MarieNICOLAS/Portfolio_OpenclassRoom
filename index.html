@@ -23,6 +23,8 @@
         </nav>
     </header>
     <main>
+
+        <!-- Dernier projet - photo - display:flex -->
         <section class="accueil-introduction">
             <div>
                 <h1>Robbie Lens Photographie</h1>
@@ -31,7 +33,7 @@
                     plus de 5 ans maintenant, j’exerce mon métier avec la passion
                     qui m’anime : capturer l’essence de chaque instant.
                 </p>
-                <a href="" class="cta">UN PROJET ? ÉCRIVEZ-MOI</a>
+                <a href="formulaire" class="cta">UN PROJET ? ÉCRIVEZ-MOI</a>
             </div>
             <img src="Image/robbie-lens.png" alt="Portrait avec effet de la photographe Robbie Lens" >
         </section>
@@ -48,7 +50,32 @@
                 <img src="Image/element-6.png" alt="Lac Wanaka - Nouvelle-Zélande" >
             </div>
         </section>
+        
+        <!-- Formulaire de contact -->
+        <section id="contact" class="section-contact">
+            <h2>Parlons de votre projet</h2>
+            <form method="get" action="#">
+                
+                <div class="form-nom-email">
+                    <div class="form-column">
+                        <label for="nom">Nom</label>
+                        <input type="text" name="nom" id="nom" autofocus required>    
+                    </div>
+                    <div class="form-column">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                </div>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="10"></textarea>
+                <input type="submit" value="Envoyer" class="cta">
+                
+            </form>
+        </section>
+        
     </main>
+
+    <!-- Pied-de-page -->
     <footer>
         <img src="Image/logo.png" alt="Logo Robbie Lens" >
         <div>
